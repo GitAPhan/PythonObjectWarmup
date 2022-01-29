@@ -1,3 +1,4 @@
+import random
 import player as p
 import computer as c
 
@@ -5,7 +6,7 @@ import computer as c
 print('would you like to play a game?')
 
 player = p.Player(10)
-computer = c.Computer(10)
+computer = c.Computer(random.randint(7, 14))
 
 while True:
     try:
