@@ -1,6 +1,7 @@
 import random
+import fighter as f
 
-class Player:
+class Player(f.fighter):
     def __init__(self, currentHp):
         self.currentHp = currentHp
 
@@ -9,6 +10,3 @@ class Player:
             return random.randint(2, 3)
         elif attack == '2':
             return random.randint(0, 5)
-
-    def defend(self, damage):
-        self.currentHp -= damage
